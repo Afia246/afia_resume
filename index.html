@@ -3,54 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Afia's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            min-height: 100vh;
+            transition: background 1s ease;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+            animation: fadeIn 3s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {opacity: 0; transform: translateY(-20px);}
+            100% {opacity: 1; transform: translateY(0);}
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.2);
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.4);
+            transform: scale(1.1);
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.5s ease, background 0.5s ease;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+            background: rgba(0,0,0,0.5);
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Afia Adilah</h1>
+        <p>Creative Developer | Portfolio Showcase</p>
     </header>
 
-    <main>
-        <section id="home">
-            <h1>Hi, I'm [Your Name]</h1>
-            <p>A passionate developer building awesome things.</p>
-        </section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <!-- Projects will be added here -->
-            </div>
-        </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Afia, a passionate developer with a flair for creating colorful and interactive web experiences. I love experimenting with animations and smooth transitions.</p>
+    </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I specialize in front-end development with expertise in HTML, CSS, and JavaScript.</p>
-        </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here you can showcase your projects. Each project could have an image, description, and link.</p>
+    </section>
 
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch: <a href="mailto:your-email@example.com" style="color:#fff;text-decoration:underline;">your-email@example.com</a></p>
+    </section>
 
     <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        &copy; 2025 Afia Adilah | All Rights Reserved
     </footer>
 
-    <script src="scripts/script.js"></script>
 </body>
 </html>
