@@ -3,48 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partho Deep Saha | Research Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
     <header>
-        <h1 class="fade-in">Partho Deep Saha</h1>
-        <p class="fade-in">Graduate Researcher | Deep Learning | Medical Imaging</p>
-
         <nav>
-            <a href="index.html">Home</a>
-            <a href="research.html">Research</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html">About</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section class="reveal">
-        <h2>Welcome</h2>
-        <p>I am a graduate researcher specializing in deep learning, medical image segmentation, 
-           and biomedical signal processing. My work focuses on developing efficient and interpretable 
-           AI-based healthcare solutions.</p>
-    </section>
+    <main>
+        <section id="home">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>A passionate developer building awesome things.</p>
+        </section>
 
-    <section class="reveal">
-        <h2>Featured Research</h2>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- Projects will be added here -->
+            </div>
+        </section>
 
-        <div class="card">
-            <h3>EffPolypSeg: Efficient Polyp Segmentation</h3>
-            <p>Under Review — Mahdy Research Academy</p>
-        </div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I specialize in front-end development with expertise in HTML, CSS, and JavaScript.</p>
+        </section>
 
-        <div class="card">
-            <h3>Multi-Wavelet Fusion for Pathological Myopia</h3>
-            <p>M.Sc. Thesis — BUET</p>
-        </div>
-    </section>
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        © 2025 • Partho Deep Saha
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
